@@ -1,0 +1,185 @@
+body {
+  font-family: "PT Serif", serif;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+#main-container {
+  background-color: rgb(191, 191, 191);
+  background-size: cover;
+  width: 100%;
+}
+#header-section {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #28871e;
+}
+#logo {
+  font-size: 2rem;
+}
+#music-heading {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+#toggleTheme {
+  background-color: rgb(91, 142, 91);
+  padding: 0.6rem 1rem 0.3rem;
+  border-radius: 8px;
+}
+.music-container {
+  background-color: #f3f2f2;
+  background-size: cover;
+  padding: 1rem;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+}
+.songs-section {
+  border-radius: 1rem;
+  width: auto;
+  padding: 1rem;
+  background-color: rgb(255, 165, 0);
+  border: 1px solid rgb(94, 81, 81);
+}
+.song-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: auto;
+  background-color: orange;
+  border: 1px solid rgb(94, 81, 81);
+}
+.playlist-section {
+  width: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: orange;
+  border: 1px solid rgb(94, 81, 81);
+}
+#genreFilter {
+  background-color: rgb(62, 62, 62);
+  padding: 0.3rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+body[data-theme="dark"] {
+  background-color: #333;
+  color: white;
+}
+body[data-theme="light"] {
+  background-color: white;
+  color: black;
+}
+#songList {
+  padding: 0.6rem;
+  border-radius: 1rem;
+  /* background-color: rgb(147, 108, 49); */
+}
+#songList div {
+  border: 1px solid rgb(65, 65, 65);
+  padding: 0.6rem;
+  margin-bottom: 0.4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: rgb(147, 108, 49);
+}
+#currentSongImg {
+  width: 40%;
+  height: 44%;
+  border-radius: 10%;
+  margin: 0 auto;
+}
+#currentSongName {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#currentSongArtist {
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1rem;
+}
+#audioPlayer {
+  margin: 1rem 0 2rem;
+  margin-bottom: 0.5rem;
+  margin-left: 28%;
+}
+#song-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+#prevBtn {
+  background-color: rgb(25, 135, 198);
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  border: 1px solid rgb(36, 36, 36);
+  border-radius: 1rem;
+  width: 70%;
+  margin-right: 2rem;
+}
+#nextBtn {
+  background-color: rgb(28, 99, 153);
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid rgb(36, 36, 36);
+  border-radius: 1rem;
+  width: 70%;
+}
+#addToPlaylistBtn {
+  background-color: rgb(13, 121, 16);
+  margin-right: 2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  border: 1px solid rgb(36, 36, 36);
+  border-radius: 1rem;
+  width: 70%;
+}
+#newPlaylistName {
+  width: 60%;
+  height: 1.6rem;
+  border-radius: 0.4rem;
+  border: 1px solid green;
+}
+#createPlaylistBtn {
+  background-color: rgb(13, 121, 16);
+  padding: 0.4rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 700;
+  border: 1px solid rgb(36, 36, 36);
+  border-radius: 1rem;
+}
+#playlistList {
+  margin: 1rem;
+  border-radius: 0.4rem;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+}
+#playlistList div {
+  border: 1px solid rgb(65, 65, 65);
+  padding: 0.6rem;
+  margin-bottom: 0.4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: rgb(147, 108, 49);
+}
